@@ -15,3 +15,16 @@ Install the package via composer:
 ```bash
 composer require gbetts/ancient-dates
 ```
+## Usage
+Initialise your date using the `AncientDate` class
+```php
+use Gbetts\AncientDates\AncientDate
+
+$date = new AncientDate('-155000000-01-01T00:00:00Z');
+```
+The following methods are available for the date object:
+```php
+$date->toBceString() // 155 million years BCE
+$date->yearsAgo() // 155002025
+$date->period() // Jurassic
+```
